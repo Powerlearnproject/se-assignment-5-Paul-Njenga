@@ -1,0 +1,109 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/XoLGRbHq)
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=15331963&assignment_repo_type=AssignmentRepo)
+# SE-Assignment-5
+Installation and Navigation of Visual Studio Code (VS Code)
+ Instructions:
+Answer the following questions based on your understanding of the installation and navigation of Visual Studio Code (VS Code). Provide detailed explanations and examples where appropriate.
+
+ Questions:
+
+1. Installation of VS Code:
+   - Describe the steps to download and install Visual Studio Code on Windows 11 operating system. Include any prerequisites that might be needed.
+   Having installed ubuntu OS, I used the the commands
+      sudo spt update
+      sudo apt install software-properties-common apt-transport-https wget
+      wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+      sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+      sudo apt update
+      sudo apt install code
+
+2. First-time Setup:
+   - After installing VS Code, what initial configurations and settings should be adjusted for an optimal coding environment? Mention any important settings or extensions.
+   I installed pip so i could now download python 3 packages.
+   I installed Github and python3 extensions
+
+3. User Interface Overview:
+   - Explain the main components of the VS Code user interface. Identify and describe the purpose of the Activity Bar, Side Bar, Editor Group, and Status Bar.
+   Activity Bar:
+
+Location: On the far left side of the interface.
+Purpose: The Activity Bar provides quick access to different views and sections within VS Code, such as Explorer, Search, Source Control, Run and Debug, and Extensions. It allows users to switch between these views easily.
+Side Bar:
+
+Location: Immediately to the right of the Activity Bar.
+Purpose: The Side Bar displays the contents and tools associated with the currently selected activity from the Activity Bar. For instance, if the Explorer view is selected, the Side Bar will show the file and folder structure of the current project. It can also show other panels like search results, version control information, or debugging controls, depending on the context.
+Editor Group:
+
+Location: Central area of the interface, taking up most of the space.
+Purpose: The Editor Group is where files are opened and edited. VS Code supports multiple editor groups, allowing users to split the editor into several panes and work on multiple files side by side. This is useful for comparing code, copying sections between files, or multitasking.
+Status Bar:
+
+Location: At the bottom of the interface.
+Purpose: The Status Bar provides information and shortcuts related to the current file and workspace. It shows details like the current branch in version control, file encoding, line and column numbers, and notifications from extensions. The Status Bar can also be customized to display additional information or tools.
+
+4. Command Palette:
+   - What is the Command Palette in VS Code, and how can it be accessed? Provide examples of common tasks that can be performed using the Command Palette.
+   The Command Palette in Visual Studio Code is a powerful feature that allows users to access a wide range of commands and functionalities quickly and efficiently without navigating through menus. It provides a way to execute commands, install extensions, modify settings, and perform various tasks using just the keyboard.
+   Some of the common functions carried out using the palette include:
+   * Command Execution: Start typing the name of the command you want to execute, and the Command Palette will provide suggestions. You can then select the desired command from the list.
+   * Navigating Features: Quickly access various features and functionalities, such as opening files, switching between themes, managing extensions, and more.
+   * Keyboard-centric Workflow: Enhances productivity by minimizing the need for mouse interaction and streamlining workflows.
+
+
+5. Extensions in VS Code:
+   - Discuss the role of extensions in VS Code. How can users find, install, and manage extensions? Provide examples of essential extensions for web development.
+   Extensions on VSC play an important role in a developers environmental setup. They shield the developer from stand alone installations everytime he/she wants to use a  diferrent language while codeing. They also add and bring more features to Visual  Studiio Code.
+   Installations of extensions is quite easy and straightforward, head over to the activity bar and search for the name of the extension you want and select it from the list provided. The extension will self install and no more action is required.
+   examples of extensions on VSC include: 
+      - Github Copilot
+      - Code Snap
+      - HTML Viewer
+      - Docker
+
+6. Integrated Terminal:
+   - Describe how to open and use the integrated terminal in VS Code. What are the advantages of using the integrated terminal compared to an external terminal?
+   The integrated terminal in Visual Studio Code allows developers to run command-line operations directly within the editor, providing a seamless and efficient workflow. Here’s how to open and use it, along with the advantages of using the integrated terminal compared to an external terminal.
+
+   * Seamless Workflow: The integrated terminal allows you to run commands and scripts directly within VS Code, eliminating the need to switch between the editor and an external terminal. This improves efficiency and reduces context switching.
+
+   * Context Awareness: The integrated terminal operates in the context of the workspace or project currently open in VS Code, ensuring that commands are executed in the correct directory without the need for manual navigation.
+
+   * Visibility and Layout: The terminal panel can be docked, resized, and split, allowing for a customizable layout that fits your workflow. You can view your code and terminal output side by side.
+
+   * Integrated Features: The terminal is integrated with other VS Code features such as debugging, task running, and version control, providing a more cohesive development environment.
+
+   * Extensions and Customization: Extensions can add additional functionality to the terminal, and you can customize its behavior and appearance through VS Code’s settings.
+
+   * Consistency: Using the integrated terminal ensures a consistent environment across different operating systems, as VS Code can configure the terminal to work similarly on Windows, macOS, and Linux.
+
+7. File and Folder Management:
+   - Explain how to create, open, and manage files and folders in VS Code. How can users navigate between different files and directories efficiently?
+   Creation of files, folders or directories is easened by the quick access of the create folder icon on the activity bar.Developers are able to manage atheir files easily and quickly. Developers are also free to open multiple files simultaneouusly and work on them separately. Using the autosave feature, Developers need not to constantly save their work as the process is automated.
+
+8. Settings and Preferences:
+   - Where can users find and customize settings in VS Code? Provide examples of how to change the theme, font size, and keybindings.
+   A user can access setings on VSC through the controll pallette and then searching OPen Settings and clicking on it.
+   Or use the keyboard shorcut of "CTRL + Comma" to head over directly to the settings page. ONce there, navigate to the desired settings and set them as per your preference. Therer is a serach bar to assist the user in finding a speciific setting or in a case the user is not sure of the location of the settings.
+
+9. Debugging in VS Code:
+   - Outline the steps to set up and start debugging a simple program in VS Code. What are some key debugging features available in VS Code?
+   Setting up and starting debugging in Visual Studio Code involves a few steps, including configuring the debugger and running your code. Once you've creeated your project, on the Debug panel, click on the gear icon to create a launch.json file. This file contains configurations for launching your program. VS Code will prompt you to select an environment (e.g., Node.js, Python, etc.). Choose the appropriate one for your project.A launch.json file will be created in the .vscode folder with a default configuration. You can customize it as needed.
+   Set Breakpoints:Open the file you want to debug.Click in the gutter to the left of the line numbers where you want to set a breakpoint, or press F9 with the cursor on the line.Start Debugging:In the Debug panel, select the appropriate configuration from the dropdown menu.Click the green play button or press F5 to start debugging.Your program will start running, and execution will pause at any breakpoints you’ve set.
+
+
+10. Using Source Control:
+    - How can users integrate Git with VS Code for version control? Describe the process of initializing a repository, making commits, and pushing changes to GitHub.
+
+   INtegratingGIT with VScode involves several steps
+      - Iniitialize Your reepository
+      - Staging and making commits. This is making changes on your code and project files
+      - Push to Github. 
+            * This involves addinng your remote repository to your pc
+            * Pushing changes through the git push command.
+
+ Submission Guidelines:
+- Your answers should be well-structured, concise, and to the point.
+- Provide screenshots or step-by-step instructions where applicable.
+- Cite any references or sources you use in your answers.
+- Submit your completed assignment by 1st July 
+
